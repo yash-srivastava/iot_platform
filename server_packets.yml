@@ -1,0 +1,49 @@
+delim: 0x7E
+packets:
+      0x3000:
+        description: Get/Set Digital Output State
+        length: 43
+        parameters:
+          "ScuId":
+              offset: 29
+              length: 8
+          "GetSet":
+              offset: 37
+              length: 1
+          "Pwm":
+              offset: 38
+              length: 1
+          "Op1":
+              offset: 39
+              length: 1
+          "Op2":
+              offset: 40
+              length: 1
+          "Op3":
+              offset: 41
+              length: 1
+          "Op4":
+              offset: 42
+              length: 1
+
+
+      0x8000:
+        description: Get/Set Scheduling
+        length: 43
+        parameters:
+          "ScuId":
+              offset: 29
+              length: 8
+          "GetSet":
+              offset: 37
+              length: 1
+          "SchedulingId":
+              offset: 38
+              length: 1
+          "Pwm":
+              offset: 39
+              length: 1
+          "Expr":
+              offset: 40
+
+

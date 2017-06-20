@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"github.com/StabbyCutyou/buffstreams"
 	"encoding/binary"
-	"iot/lib/formatter"
+	"github.com/iot_platform/lib/formatter"
 	"github.com/revel/revel"
-	"iot/conf"
-	"iot/lib/utils"
+	"github.com/iot_platform/conf"
+	"github.com/iot_platform/lib/utils"
 )
 
 func SendResponsePacket(pack_type int, incoming conf.Incoming){

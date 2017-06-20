@@ -1,10 +1,10 @@
 package sender
 
 import (
-	"iot/lib/formatter"
+	"github.com/iot_platform/lib/formatter"
 	"time"
-	"iot/lib/utils"
-	"iot/conf"
+	"github.com/iot_platform/lib/utils"
+	"github.com/iot_platform/conf"
 	"strings"
 	"github.com/jrallison/go-workers"
 )

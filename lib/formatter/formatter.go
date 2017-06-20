@@ -2,7 +2,7 @@ package formatter
 
 import (
 	"encoding/json"
-	"iot/lib/utils"
+	"github.com/iot_platform/lib/utils"
 	"encoding/binary"
 	"encoding/hex"
 	"strings"

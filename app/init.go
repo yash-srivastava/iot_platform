@@ -2,10 +2,9 @@ package app
 
 import (
 	"github.com/revel/revel"
-	"iot/lib/tcp_server"
-	"iot/lib/job_worker"
+	"github.com/iot_platform/conf"
+	"github.com/iot_platform/lib/job_worker"
 	"time"
-	"iot/conf"
 	"github.com/bsphere/le_go"
 )
 

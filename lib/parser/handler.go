@@ -1,14 +1,14 @@
 package parser
 
 import (
-	"iot/lib/utils"
+	"github.com/iot_platform/lib/utils"
 	"github.com/revel/revel"
-	"iot/lib/formatter"
+	"github.com/iot_platform/lib/formatter"
 	"strconv"
 	"math"
 	"encoding/binary"
-	"iot/conf"
-	"iot/lib/sender"
+	"github.com/iot_platform/conf"
+	"github.com/iot_platform/lib/sender"
 )
 
 func HandlePackets(packet_type int, input map[string]interface{}){

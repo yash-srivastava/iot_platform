@@ -4,7 +4,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/sns"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/aws"
-	"iot/lib/utils"
+	"github.com/iot_platform/lib/utils"
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/revel/revel"
 )

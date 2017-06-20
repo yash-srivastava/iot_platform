@@ -2,7 +2,7 @@ package parser
 
 import (
 	"encoding/hex"
-	"iot/lib/utils"
+	"github.com/iot_platform/lib/utils"
 	"log"
 	"math"
 	"strconv"

@@ -2,13 +2,13 @@ package job_worker
 
 import (
 	"github.com/StabbyCutyou/buffstreams"
-	"iot/lib/sgu_utils"
-	"iot/lib/formatter"
-	"iot/lib/sender"
+	"github.com/iot_platform/lib/sgu_utils"
+	"github.com/iot_platform/lib/formatter"
+	"github.com/iot_platform/lib/sender"
 	"github.com/revel/revel"
-	"iot/conf"
+	"github.com/iot_platform/conf"
 	"github.com/jrallison/go-workers"
-	"iot/lib/utils"
+	"github.com/iot_platform/lib/utils"
 )
 
 func ProcessPacket(message *workers.Msg ) {

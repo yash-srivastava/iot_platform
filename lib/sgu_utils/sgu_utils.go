@@ -3,9 +3,9 @@ package sgu_utils
 import (
 	"github.com/StabbyCutyou/buffstreams"
 
-	"iot/lib/parser"
+	"github.com/iot_platform/lib/parser"
 	"github.com/revel/revel"
-	"iot/lib/utils"
+	"github.com/iot_platform/lib/utils"
 )
 
 

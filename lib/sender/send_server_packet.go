@@ -1,11 +1,11 @@
 package sender
 
 import (
-	"iot/lib/formatter"
+	"github.com/iot_platform/lib/formatter"
 	"github.com/revel/revel"
-	"iot/conf"
+	"github.com/iot_platform/conf"
 	"gopkg.in/oleiade/reflections.v1"
-	"iot/lib/utils"
+	"github.com/iot_platform/lib/utils"
 )
 
 func SendServerPacket(packet_type int, params interface{}){

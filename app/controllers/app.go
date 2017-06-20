@@ -2,9 +2,9 @@ package controllers
 
 import (
 	"github.com/revel/revel"
-	"iot/lib/sender"
-	"iot/conf"
-	"iot/lib/utils"
+	"github.com/iot_platform/lib/sender"
+	"github.com/iot_platform/conf"
+	"github.com/iot_platform/lib/utils"
 	"github.com/StabbyCutyou/buffstreams"
 )
 
