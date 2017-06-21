@@ -84,3 +84,14 @@ func (c App) GetConnectedSgus() revel.Result {
 
 	return c.RenderJSON(response)
 }
+
+func (c App) Get() revel.Result {
+
+	response := sender.Response{Success: true, Message:"Something went wrong"}
+	packet := make(map[string]interface{})
+	err := c.Params.BindJSON(&packet)
+	if err==nil{
+		revel.INFO.Println(packet)
+	}
+	return c.RenderJSON(response)
+}
