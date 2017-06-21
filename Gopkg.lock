@@ -8,16 +8,10 @@
   version = "v2.0.0"
 
 [[projects]]
-  name = "github.com/agtorre/gocolorize"
-  packages = ["."]
-  revision = "f42b554bf7f006936130c9bb4f971afd2d87f671"
-  version = "v1.0.0"
-
-[[projects]]
   name = "github.com/aws/aws-sdk-go"
   packages = ["aws","aws/awserr","aws/awsutil","aws/client","aws/client/metadata","aws/corehandlers","aws/credentials","aws/credentials/ec2rolecreds","aws/credentials/endpointcreds","aws/credentials/stscreds","aws/defaults","aws/ec2metadata","aws/endpoints","aws/request","aws/session","aws/signer/v4","internal/shareddefaults","private/protocol","private/protocol/query","private/protocol/query/queryutil","private/protocol/rest","private/protocol/xml/xmlutil","service/sns","service/sts"]
-  revision = "0ddc167e85ddb40d9fbc97bfabda2175e49b3dbc"
-  version = "v1.9.44"
+  revision = "a9609d199df31ef4b1f347b007d63bb7c48e5619"
+  version = "v1.10.0"
 
 [[projects]]
   name = "github.com/bitly/go-simplejson"
@@ -56,34 +50,10 @@
   revision = "d60d79dbbfbb83f849d2430013a59152845fa598"
 
 [[projects]]
-  name = "github.com/klauspost/compress"
-  packages = ["flate","gzip","zlib"]
-  revision = "6c8db69c4b49dd4df1fff66996cf556176d0b9bf"
-  version = "v1.2.1"
-
-[[projects]]
-  name = "github.com/klauspost/cpuid"
-  packages = ["."]
-  revision = "09cded8978dc9e80714c4d85b0322337b0a1e5e0"
-  version = "v1.0"
-
-[[projects]]
-  name = "github.com/klauspost/crc32"
-  packages = ["."]
-  revision = "cb6bfca970f6908083f26f39a79009d608efd5cd"
-  version = "v1.1"
-
-[[projects]]
   branch = "master"
   name = "github.com/orcaman/concurrent-map"
   packages = ["."]
   revision = "2ae17bc4c860c83513ee50feb9746f3e50d7515d"
-
-[[projects]]
-  name = "github.com/revel/config"
-  packages = ["."]
-  revision = "662332b741dd464a886ab0901379c02b9bc5dc30"
-  version = "v0.16.0"
 
 [[projects]]
   name = "github.com/revel/modules"
@@ -93,33 +63,15 @@
 
 [[projects]]
   name = "github.com/revel/revel"
-  packages = [".","testing"]
+  packages = ["testing"]
   revision = "ef98b4e03c1f92cab619288786ceae91cd94c653"
   version = "v0.16.0"
 
 [[projects]]
   branch = "master"
-  name = "github.com/robfig/pathtree"
-  packages = ["."]
-  revision = "41257a1839e945fce74afd070e02bab2ea2c776a"
-
-[[projects]]
-  branch = "master"
   name = "golang.org/x/net"
   packages = ["websocket"]
-  revision = "fe686d45ea04bc1bd4eff6a52865ce8757320325"
-
-[[projects]]
-  branch = "master"
-  name = "golang.org/x/sys"
-  packages = ["unix"]
-  revision = "fb4cac33e3196ff7f507ab9b2d2a44b0142f5b5a"
-
-[[projects]]
-  name = "gopkg.in/fsnotify.v1"
-  packages = ["."]
-  revision = "629574ca2a5df945712d3079857300b5e4da0236"
-  version = "v1.4.2"
+  revision = "057a25b06247e0c51ba15d8ae475feb2fcb72164"
 
 [[projects]]
   name = "gopkg.in/oleiade/reflections.v1"
@@ -136,6 +88,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "ddf1c05a6923bf1ad614c545577617467f476b5ea5ee5b473d653ad8e38f1074"
+  inputs-digest = "f1f9656ef050e04700f0b9734085a99b4c641e62d45191163f9c475430a40eb6"
   solver-name = "gps-cdcl"
   solver-version = 1

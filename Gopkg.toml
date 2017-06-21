@@ -20,6 +20,7 @@
 #  name = "github.com/x/y"
 #  version = "2.4.0"
 
+ignored = ["github.com/revel/revel"]
 
 [[constraint]]
   name = "github.com/StabbyCutyou/buffstreams"
@@ -36,10 +37,6 @@
 [[constraint]]
   branch = "master"
   name = "github.com/orcaman/concurrent-map"
-
-[[constraint]]
-  name = "github.com/revel/revel"
-  version = "0.16.0"
 
 [[constraint]]
   name = "gopkg.in/oleiade/reflections.v1"
