@@ -6,7 +6,7 @@ import (
 	"github.com/iot_platform/lib/job_worker"
 	"github.com/iot_platform/lib/tcp_server"
 	"time"
-	"github.com/bsphere/le_go"
+	"github.com/Graylog2/go-gelf/gelf"
 )
 
 var (
@@ -28,17 +28,17 @@ func InitForConn(){
 }
 
 func SetLogger()  {
-	token := revel.Config.StringDefault("logentries","")
-	if token!=""{
-		le, err := le_go.Connect(revel.Config.StringDefault("logentries",""))
+	logger := revel.Config.StringDefault("logger","")
+	if logger != ""{
+		gelfWriter, err := gelf.NewWriter(logger)
 		if err != nil {
-			panic(err)
+			revel.INFO.Println(err)
+		}else{
+			revel.INFO.SetOutput(gelfWriter)
+			revel.WARN.SetOutput(gelfWriter)
+			revel.ERROR.SetOutput(gelfWriter)
 		}
-		revel.INFO.SetOutput(le)
-		revel.WARN.SetOutput(le)
-		revel.ERROR.SetOutput(le)
 	}
-
 }
 
 func StartupScript() {
