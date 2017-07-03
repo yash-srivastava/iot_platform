@@ -6,6 +6,7 @@ import (
 	"github.com/iot_platform/lib/sender"
 	"github.com/iot_platform/lib/utils"
 	"github.com/revel/revel"
+	"net/http"
 )
 
 type App struct {
@@ -83,14 +84,21 @@ func (c App) GetConnectedSgus() revel.Result {
 
 	return c.RenderJSON(response)
 }
+type MyHtml string
+
+func (r MyHtml) Apply(req *revel.Request, resp *revel.Response) {
+	resp.WriteHeader(http.StatusAccepted, "text/html")
+}
 
 func (c App) Get() revel.Result {
 
-	response := sender.Response{Success: true, Message: "Something went wrong"}
+	revel.INFO.Println(c.Params)
+	/*response := sender.Response{Success: true, Message: "Something went wrong"}
 	packet := make(map[string]interface{})
 	err := c.Params.BindJSON(&packet)
 	if err == nil {
 		revel.INFO.Println(packet)
-	}
-	return c.RenderJSON(response)
+	}*/
+	c.Response.Status=202
+	return MyHtml("")
 }
