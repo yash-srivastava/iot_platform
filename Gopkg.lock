@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "github.com/Graylog2/go-gelf"
+  packages = ["gelf"]
+  revision = "7029da823dad4ef3a876df61065156acb703b2ea"
+
+[[projects]]
   name = "github.com/StabbyCutyou/buffstreams"
   packages = ["."]
   revision = "df3654df598b41172daaff0a46562eca6f5ab282"
@@ -10,20 +16,14 @@
 [[projects]]
   name = "github.com/aws/aws-sdk-go"
   packages = ["aws","aws/awserr","aws/awsutil","aws/client","aws/client/metadata","aws/corehandlers","aws/credentials","aws/credentials/ec2rolecreds","aws/credentials/endpointcreds","aws/credentials/stscreds","aws/defaults","aws/ec2metadata","aws/endpoints","aws/request","aws/session","aws/signer/v4","internal/shareddefaults","private/protocol","private/protocol/query","private/protocol/query/queryutil","private/protocol/rest","private/protocol/xml/xmlutil","service/sns","service/sts"]
-  revision = "a9609d199df31ef4b1f347b007d63bb7c48e5619"
-  version = "v1.10.0"
+  revision = "a5a7f553e106c0b1dcbfbdaeb8774592fcc1a68a"
+  version = "v1.10.6"
 
 [[projects]]
   name = "github.com/bitly/go-simplejson"
   packages = ["."]
   revision = "aabad6e819789e569bd6aabf444c935aa9ba1e44"
   version = "v0.5.0"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/bsphere/le_go"
-  packages = ["."]
-  revision = "7a984a84b5492ae539b79b62fb4a10afc63c7bcf"
 
 [[projects]]
   name = "github.com/garyburd/redigo"
@@ -71,7 +71,7 @@
   branch = "master"
   name = "golang.org/x/net"
   packages = ["websocket"]
-  revision = "057a25b06247e0c51ba15d8ae475feb2fcb72164"
+  revision = "1f9224279e98554b6a6432d4dd998a739f8b2b7c"
 
 [[projects]]
   name = "gopkg.in/oleiade/reflections.v1"
@@ -88,6 +88,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f1f9656ef050e04700f0b9734085a99b4c641e62d45191163f9c475430a40eb6"
+  inputs-digest = "06ce2459c5dd0a55785dcf08a122d1cda4f72d022e614eb2bc5a4972cac4fa2b"
   solver-name = "gps-cdcl"
   solver-version = 1
